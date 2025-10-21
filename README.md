@@ -32,3 +32,36 @@ This stage will focus on:
 ---
 
 ## **Project Structure**
+
+##  **Setup Instructions**
+
+### 1️ Clone the repository 
+```bash
+git clone https://github.com/rajyavanshi/Portfolio_Optimization_Project.git
+cd Portfolio_Optimization_Project
+
+### 2 Create Conda environment
+conda env create -f requirements.yml
+conda activate portfolio_opt
+
+### Runn the workflow
+python main.py
+
+### Tools & Libraries
+
+Python 3.10+
+
+Pandas, NumPy, Matplotlib
+
+Scikit-learn (for factor normalization)
+
+cvxpy (for optimization)
+
+tqdm, os, logging👨‍💻 
+
+Author
+Suraj Prakash
+B.Tech ECE @ BIT Mesra
+Interested in Quantitative Finance, Portfolio Research, and Mathematical Modeling.
+
+“Quantitative investing is where mathematics meets intuition — and every dataset hides a strategy.”
