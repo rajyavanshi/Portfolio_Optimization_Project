@@ -13,7 +13,7 @@ MERGED_PATH = os.path.join(BASE_DIR, "processed_data", "merged_prices.csv")
 OUTPUT_PATH = os.path.join(BASE_DIR, "results", "factors", "fundamental_factors.csv")
 
 def generate_fundamentals():
-    print("📥 Reading tickers from merged_prices.csv ...")
+    print(" Reading tickers from merged_prices.csv ...")
     df = pd.read_csv(MERGED_PATH, usecols=["date", "ticker"])
     df["date"] = pd.to_datetime(df["date"])
     latest_dates = df["date"].unique()[-4:]  # last 4 quarters
@@ -34,8 +34,8 @@ def generate_fundamentals():
             })
     fundamentals_df = pd.DataFrame(fundamentals)
     fundamentals_df.to_csv(OUTPUT_PATH, index=False)
-    print(f"✅ Saved dummy fundamentals to: {OUTPUT_PATH}")
-    print(f"📊 Shape: {fundamentals_df.shape} | Unique tickers: {fundamentals_df['ticker'].nunique()}")
+    print(f" Saved dummy fundamentals to: {OUTPUT_PATH}")
+    print(f" Shape: {fundamentals_df.shape} | Unique tickers: {fundamentals_df['ticker'].nunique()}")
 
 if __name__ == "__main__":
     generate_fundamentals()

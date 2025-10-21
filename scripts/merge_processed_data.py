@@ -15,7 +15,7 @@ OUTPUT_PATH = os.path.join(PROCESSED_DIR, "merged_prices.csv")
 
 # ---------- MERGE SCRIPT ----------
 def merge_processed_files():
-    print("📂 Reading processed_data directory...")
+    print(" Reading processed_data directory...")
     files = [f for f in os.listdir(PROCESSED_DIR) if f.endswith(".csv") and f != "fundamental_factors.csv"]
 
     all_data = []
@@ -28,7 +28,7 @@ def merge_processed_files():
             df["ticker"] = ticker.upper()
             all_data.append(df)
         except Exception as e:
-            print(f"⚠️ Skipped {file} due to error: {e}")
+            print(f" Skipped {file} due to error: {e}")
 
     # Combine all dataframes
     merged_df = pd.concat(all_data, ignore_index=True)
@@ -36,8 +36,8 @@ def merge_processed_files():
 
     # Save output
     merged_df.to_csv(OUTPUT_PATH, index=False)
-    print(f"✅ Merged dataset saved to: {OUTPUT_PATH}")
-    print(f"📊 Total rows: {len(merged_df):,} | Unique tickers: {merged_df['ticker'].nunique()}")
+    print(f" Merged dataset saved to: {OUTPUT_PATH}")
+    print(f" Total rows: {len(merged_df):,} | Unique tickers: {merged_df['ticker'].nunique()}")
 
 if __name__ == "__main__":
     merge_processed_files()

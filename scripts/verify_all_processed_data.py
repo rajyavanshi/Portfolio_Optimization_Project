@@ -63,7 +63,7 @@ for file in os.listdir(raw_dir):
                 "Proc End": str(proc_end)[:10],
                 "Raw Missing": raw_missing,
                 "Proc Missing": proc_missing,
-                "Volume OK": "✅" if vol_match else "❌"
+                "Volume OK": "YES" if vol_match else "NO"
             })
 
         except Exception as e:

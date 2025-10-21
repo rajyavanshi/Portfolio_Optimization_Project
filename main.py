@@ -1,4 +1,4 @@
-# D:\Portfolio_Project\main.py
+#  D:\Portfolio Optimzation project
 
 from scripts.data_cleaner import clean_and_resample_single, process_all_files
 

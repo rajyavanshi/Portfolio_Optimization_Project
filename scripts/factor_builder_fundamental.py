@@ -38,7 +38,7 @@ def normalize_factors(df, cols):
 
 # ---------- PIPELINE ----------
 def build_fundamental_factors():
-    print("📥 Loading fundamental data...")
+    print(" Loading fundamental data...")
     df = pd.read_csv(INPUT_PATH, parse_dates=["date"])
     df.sort_values(["ticker", "date"], inplace=True)
 
@@ -46,7 +46,7 @@ def build_fundamental_factors():
     num_cols = ["PE", "PB", "ROE", "ROA", "Debt_to_Equity"]
     df[num_cols] = df[num_cols].apply(pd.to_numeric, errors="coerce")
 
-    print("⚙️ Computing value and quality factors...")
+    print(" Computing value and quality factors...")
     df = compute_value_factors(df)
     df = compute_quality_factors(df)
 
@@ -58,10 +58,10 @@ def build_fundamental_factors():
     final_cols = ["date", "ticker"] + factor_cols
     factor_df = df[final_cols].copy()
 
-    print("💾 Saving processed factors to:", OUTPUT_PATH)
+    print(" Saving processed factors to:", OUTPUT_PATH)
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     factor_df.to_csv(OUTPUT_PATH, index=False)
-    print("✅ Fundamental-based factors saved successfully!")
+    print(" Fundamental-based factors saved successfully!")
 
 if __name__ == "__main__":
     build_fundamental_factors()

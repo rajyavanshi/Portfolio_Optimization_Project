@@ -62,11 +62,11 @@ def normalize_factors(df, cols):
 
 # ---------- PIPELINE ----------
 def build_price_factors():
-    print("📥 Loading merged price data...")
+    print(" Loading merged price data...")
     df = pd.read_csv(PROCESSED_PATH, parse_dates=["date"])
     df.sort_values(["ticker", "date"], inplace=True)
 
-    print("⚙️ Computing factors...")
+    print(" Computing factors...")
     df = compute_returns(df)
     df = compute_momentum(df)
     df = compute_volatility(df)
@@ -84,10 +84,10 @@ def build_price_factors():
     final_cols = ["date", "ticker"] + factor_cols
     factor_df = df[final_cols].copy()
 
-    print("💾 Saving to:", RESULT_PATH)
+    print(" Saving to:", RESULT_PATH)
     os.makedirs(os.path.dirname(RESULT_PATH), exist_ok=True)
     factor_df.to_csv(RESULT_PATH, index=False)
-    print("✅ Price-based factor matrix saved successfully!")
+    print(" Price-based factor matrix saved successfully!")
 
 if __name__ == "__main__":
     build_price_factors()
