@@ -57,7 +57,7 @@ Scikit-learn (for factor normalization)
 
 cvxpy (for optimization)
 
-tqdm, os, logging👨‍💻 
+tqdm, os, logging 
 
 Author
 Suraj Prakash
