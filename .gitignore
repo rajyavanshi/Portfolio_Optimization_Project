@@ -6,10 +6,11 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Ignore data files
+# Ignore data files and results
 data/
 raw_data/
 processed_data/
+results/
 
 # Ignore Jupyter checkpoints
 .ipynb_checkpoints/
