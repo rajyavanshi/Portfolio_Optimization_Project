@@ -22,7 +22,7 @@ It is divided into structured stages to mirror a real quantitative research pipe
 
 ---
 
-##  **Stage 3 — Portfolio Optimization (Upcoming)**  
+##  **Stage 3 — Portfolio Optimization**  
 This stage will focus on:  
 - Implementing **Mean-Variance Optimization (Markowitz Model)**.  
 - Exploring **Minimum-Variance**, **Equal-Weight**, and **Risk-Parity** portfolios.  
