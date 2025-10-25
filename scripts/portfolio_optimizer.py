@@ -140,59 +140,75 @@ def solve_min_variance(Sigma, prev_w=None, cap=WEIGHT_CAP, gamma=0.0):
 
 def solve_mvo_sweep(mu, Sigma, prev_w=None, cap=WEIGHT_CAP, gamma=0.0, lambda_grid=LAMBDA_GRID):
     """
-    Solve convex problems: minimize lam * w^T Σ w - mu^T w + gamma * ||w - prev_w||1
-    (equivalently maximize mu^T w - lam w^T Σ w - gamma*||...||)
-    Choose solution with highest realized Sharpe (mu^T w)/(sqrt(w^T Σ w))
+    Long-only Mean-Variance Optimization sweep:
+    maximize (mu^T w - lam * w^T Σ w - gamma * ||w - prev_w||1)
+    Subject to sum(w)=1, w>=0, w<=cap
+
+    Returns:
+        best_w, best_sharpe
     """
+
     n = Sigma.shape[0]
     best_sharpe = -np.inf
     best_w = None
 
+    # Ensure proper shape and scale
     mu = np.array(mu).flatten()
+    if np.nanstd(mu) < 1e-6:
+        mu = mu + np.random.normal(0, 1e-6, size=len(mu))  # avoid identical mu
+
+    # Normalize returns roughly to same magnitude as risk (helps convex solver stability)
+    mu_scaled = mu / (np.std(mu) + 1e-8)
+
     for lam in lambda_grid:
         w = cp.Variable(n)
-        quad = lam * cp.quad_form(w, Sigma)
-        linear = - mu.T @ w  # minimization form
-        reg = 0
-        if gamma > 0 and prev_w is not None:
-            reg = gamma * cp.norm1(w - prev_w)
-        objective = cp.Minimize(quad + linear + reg)
+        objective = cp.Maximize(mu_scaled.T @ w - lam * cp.quad_form(w, Sigma))
         constraints = [cp.sum(w) == 1]
         if LONG_ONLY:
             constraints += [w >= 0]
         if cap is not None:
             constraints += [w <= cap]
+        if gamma > 0 and prev_w is not None:
+            objective = cp.Maximize(mu_scaled.T @ w - lam * cp.quad_form(w, Sigma) - gamma * cp.norm1(w - prev_w))
         prob = cp.Problem(objective, constraints)
         try:
             prob.solve(solver=CVX_SOLVER, warm_start=True, verbose=False)
-        except Exception as e:
-            logging.debug("Solver failed for lambda=%s: %s", lam, e)
+        except Exception:
             continue
         if w.value is None:
             continue
-        wv = np.array(w.value).flatten()
-        if LONG_ONLY:
-            wv = np.maximum(0.0, wv)
+        wv = np.maximum(0, np.array(w.value).flatten())
         if cap is not None:
             wv = np.minimum(wv, cap)
-        if wv.sum() <= 0:
+        if wv.sum() == 0:
             continue
-        wv = wv / wv.sum()
+        wv /= wv.sum()
+
+        # Compute Sharpe
         port_ret = mu.dot(wv)
-        port_var = max(wv.dot(Sigma.dot(wv)), 0.0)
-        port_vol = np.sqrt(port_var)
-        sharpe = port_ret / (port_vol + EPS)
+        port_vol = np.sqrt(max(wv.dot(Sigma.dot(wv)), 1e-10))
+        sharpe = port_ret / port_vol
         if np.isfinite(sharpe) and sharpe > best_sharpe:
             best_sharpe = sharpe
             best_w = wv
+
+    # Fallback
     if best_w is None:
-        logging.warning("MVO sweep found no feasible solution; falling back to min-variance.")
+        logging.warning("MVO sweep failed; falling back to min-var solution.")
         best_w = solve_min_variance(Sigma, prev_w=prev_w, cap=cap, gamma=gamma)
-        # compute sharpe
         port_ret = mu.dot(best_w)
-        port_vol = np.sqrt(max(best_w.dot(Sigma.dot(best_w)), 0.0))
-        best_sharpe = port_ret / (port_vol + EPS) if port_vol > 0 else np.nan
+        port_vol = np.sqrt(max(best_w.dot(Sigma.dot(best_w)), 1e-10))
+        best_sharpe = port_ret / port_vol
+
+    # Final normalization
+    best_w = np.clip(best_w, 0, None)
+    if cap is not None:
+        best_w = np.minimum(best_w, cap)
+    best_w /= best_w.sum()
+
     return best_w, best_sharpe
+
+
 
 def run_optimizer():
     alphas = safe_read_csv(ALPHA_FILE)
@@ -248,9 +264,12 @@ def run_optimizer():
         mu = df[ALPHA_COL].astype(float).values
         # fix vol series safely (this was the original bug)
         if VOL_COL in df.columns:
-            median_vol = np.nanmedian(df[VOL_COL].values)
-            if np.isnan(median_vol) or np.isclose(median_vol, 0.0):
+            vol_values = df[VOL_COL].values
+            if np.all(np.isnan(vol_values)):
                 median_vol = 1.0
+            else:
+                median_vol = np.nanmedian(vol_values)
+
             vols = pd.Series(df[VOL_COL].fillna(median_vol).values, index=tickers)
         else:
             vols = pd.Series(np.repeat(1.0, len(tickers)), index=tickers)

@@ -1,0 +1,389 @@
+Loading price data...
+Price rows: 1063311 unique tickers: 497
+Computing features...
+Computed features rows: 1052187
+Computing targets (forward returns)...
+Computed targets rows: 1051962
+Merged dataset rows (features with valid targets): 1041047
+Total potential rebalance dates (period ends): 125
+Rebalance dates after lookback/horizon filter: 111
+Training failed at 2016-03-31: Input y contains infinity or a value too large for dtype('float64').
+Training failed at 2016-04-29: Input y contains infinity or a value too large for dtype('float64').
+Training failed at 2016-05-31: Input y contains infinity or a value too large for dtype('float64').
+Training failed at 2016-06-30: Input y contains infinity or a value too large for dtype('float64').
+Training failed at 2016-07-29: Input y contains infinity or a value too large for dtype('float64').
+Saved alpha predictions for 2016-08-31 | n=346 | IC=-0.0140
+Saved alpha predictions for 2016-09-30 | n=347 | IC=-0.0607
+Saved alpha predictions for 2016-10-30 | n=348 | IC=-0.0893
+Saved alpha predictions for 2016-11-30 | n=351 | IC=-0.1341
+Saved alpha predictions for 2016-12-30 | n=353 | IC=0.0975
+Saved alpha predictions for 2017-01-31 | n=354 | IC=0.0758
+Saved alpha predictions for 2017-02-28 | n=354 | IC=0.0409
+Saved alpha predictions for 2017-03-31 | n=354 | IC=0.0792
+Saved alpha predictions for 2017-04-28 | n=356 | IC=-0.0412
+Saved alpha predictions for 2017-05-31 | n=353 | IC=0.1074
+Saved alpha predictions for 2017-06-30 | n=354 | IC=0.0239
+Saved alpha predictions for 2017-07-31 | n=357 | IC=0.0911
+Saved alpha predictions for 2017-08-31 | n=358 | IC=0.0654
+Saved alpha predictions for 2017-09-29 | n=359 | IC=0.2552
+Saved alpha predictions for 2017-10-31 | n=365 | IC=-0.0789
+Saved alpha predictions for 2017-11-30 | n=368 | IC=0.0931
+Saved alpha predictions for 2017-12-29 | n=373 | IC=-0.0633
+Saved alpha predictions for 2018-01-31 | n=372 | IC=-0.1589
+Saved alpha predictions for 2018-02-28 | n=373 | IC=-0.0691
+Saved alpha predictions for 2018-03-28 | n=375 | IC=-0.0239
+Saved alpha predictions for 2018-04-30 | n=378 | IC=-0.0331
+Saved alpha predictions for 2018-05-31 | n=379 | IC=0.1093
+Saved alpha predictions for 2018-06-29 | n=378 | IC=-0.0376
+Saved alpha predictions for 2018-07-31 | n=381 | IC=-0.0161
+Saved alpha predictions for 2018-08-31 | n=381 | IC=0.2783
+Saved alpha predictions for 2018-09-28 | n=383 | IC=-0.1896
+Saved alpha predictions for 2018-10-31 | n=384 | IC=0.1127
+Saved alpha predictions for 2018-11-30 | n=386 | IC=-0.0199
+Saved alpha predictions for 2018-12-31 | n=386 | IC=0.0175
+Saved alpha predictions for 2019-01-31 | n=389 | IC=0.0709
+Saved alpha predictions for 2019-02-28 | n=388 | IC=0.3002
+Saved alpha predictions for 2019-03-29 | n=389 | IC=0.2213
+Saved alpha predictions for 2019-04-30 | n=390 | IC=0.1308
+Saved alpha predictions for 2019-05-31 | n=393 | IC=-0.2483
+Saved alpha predictions for 2019-06-28 | n=393 | IC=-0.1676
+Saved alpha predictions for 2019-07-31 | n=394 | IC=-0.1846
+Saved alpha predictions for 2019-08-30 | n=395 | IC=-0.0222
+Saved alpha predictions for 2019-09-30 | n=398 | IC=0.0660
+Saved alpha predictions for 2019-10-31 | n=400 | IC=0.2822
+Saved alpha predictions for 2019-11-29 | n=400 | IC=0.0281
+Saved alpha predictions for 2019-12-31 | n=400 | IC=-0.0658
+Saved alpha predictions for 2020-01-31 | n=400 | IC=-0.3051
+Saved alpha predictions for 2020-02-28 | n=401 | IC=0.1230
+Saved alpha predictions for 2020-03-31 | n=403 | IC=-0.1145
+Saved alpha predictions for 2020-04-30 | n=405 | IC=-0.0544
+Saved alpha predictions for 2020-05-29 | n=406 | IC=-0.0401
+Saved alpha predictions for 2020-06-30 | n=406 | IC=0.0251
+Saved alpha predictions for 2020-07-31 | n=406 | IC=0.0179
+Saved alpha predictions for 2020-08-31 | n=406 | IC=0.1136
+Saved alpha predictions for 2020-09-30 | n=408 | IC=-0.0149
+Saved alpha predictions for 2020-10-30 | n=410 | IC=0.0096
+Saved alpha predictions for 2020-11-27 | n=413 | IC=-0.0085
+Saved alpha predictions for 2020-12-31 | n=414 | IC=-0.0688
+Saved alpha predictions for 2021-01-29 | n=415 | IC=0.1608
+Saved alpha predictions for 2021-02-26 | n=416 | IC=-0.0020
+Saved alpha predictions for 2021-03-31 | n=417 | IC=0.0759
+Saved alpha predictions for 2021-04-30 | n=419 | IC=0.1167
+Saved alpha predictions for 2021-05-31 | n=420 | IC=-0.0329
+Saved alpha predictions for 2021-06-30 | n=420 | IC=-0.0167
+Saved alpha predictions for 2021-07-30 | n=422 | IC=-0.1256
+Saved alpha predictions for 2021-08-31 | n=426 | IC=0.0868
+Saved alpha predictions for 2021-09-30 | n=428 | IC=0.0815
+Saved alpha predictions for 2021-10-29 | n=429 | IC=0.1441
+Saved alpha predictions for 2021-11-30 | n=432 | IC=-0.0884
+Saved alpha predictions for 2021-12-31 | n=437 | IC=0.1519
+Saved alpha predictions for 2022-01-31 | n=440 | IC=-0.0441
+Saved alpha predictions for 2022-02-28 | n=441 | IC=0.1615
+Saved alpha predictions for 2022-03-31 | n=442 | IC=0.0477
+Saved alpha predictions for 2022-04-29 | n=443 | IC=-0.1031
+Saved alpha predictions for 2022-05-31 | n=444 | IC=-0.0016
+Saved alpha predictions for 2022-06-30 | n=446 | IC=0.0000
+Saved alpha predictions for 2022-07-29 | n=446 | IC=-0.0000
+Saved alpha predictions for 2022-08-30 | n=446 | IC=nan
+Saved alpha predictions for 2022-09-30 | n=448 | IC=nan
+Saved alpha predictions for 2022-10-31 | n=448 | IC=nan
+Saved alpha predictions for 2022-11-30 | n=449 | IC=-0.0000
+Saved alpha predictions for 2022-12-30 | n=454 | IC=-0.0000
+Saved alpha predictions for 2023-01-31 | n=454 | IC=nan
+Saved alpha predictions for 2023-02-28 | n=454 | IC=nan
+Saved alpha predictions for 2023-03-31 | n=455 | IC=0.0000
+Saved alpha predictions for 2023-04-28 | n=455 | IC=0.0000
+Saved alpha predictions for 2023-05-31 | n=455 | IC=0.0000
+Saved alpha predictions for 2023-06-30 | n=457 | IC=-0.0000
+Saved alpha predictions for 2023-07-31 | n=457 | IC=0.0000
+Saved alpha predictions for 2023-08-31 | n=459 | IC=-0.0000
+Saved alpha predictions for 2023-09-29 | n=462 | IC=0.0000
+Saved alpha predictions for 2023-10-31 | n=465 | IC=nan
+Saved alpha predictions for 2023-11-30 | n=466 | IC=0.0000
+Saved alpha predictions for 2023-12-29 | n=468 | IC=-0.0000
+Saved alpha predictions for 2024-01-31 | n=471 | IC=0.0034
+Saved alpha predictions for 2024-02-29 | n=472 | IC=-0.0556
+Saved alpha predictions for 2024-03-28 | n=472 | IC=-0.0000
+Saved alpha predictions for 2024-04-30 | n=472 | IC=0.0594
+Saved alpha predictions for 2024-05-31 | n=474 | IC=-0.1453
+Saved alpha predictions for 2024-06-28 | n=478 | IC=nan
+Saved alpha predictions for 2024-07-31 | n=478 | IC=-0.0651
+Saved alpha predictions for 2024-08-30 | n=479 | IC=0.0275
+Saved alpha predictions for 2024-09-30 | n=482 | IC=0.0137
+Saved alpha predictions for 2024-10-31 | n=485 | IC=0.1231
+Saved alpha predictions for 2024-11-29 | n=487 | IC=0.1133
+Saved alpha predictions for 2024-12-31 | n=493 | IC=-0.2723
+Saved alpha predictions for 2025-01-31 | n=497 | IC=-0.3116
+Saved alpha predictions for 2025-02-28 | n=497 | IC=0.0193
+Saved alpha predictions for 2025-03-28 | n=497 | IC=-0.0483
+Saved alpha predictions for 2025-04-30 | n=497 | IC=0.1739
+Saved alpha predictions for 2025-05-30 | n=497 | IC=-0.0948
+Saved merged alpha file: D:\Portfolio Optimzation project\artifacts\alpha_predictions.csv | rows=44376
+IC stats (first 10 rows):
+        date  ic_pearson    n
+0 2016-08-31   -0.013962  346
+1 2016-09-30   -0.060668  347
+2 2016-10-30   -0.089298  348
+3 2016-11-30   -0.134085  351
+4 2016-12-30    0.097476  353
+5 2017-01-31    0.075835  354
+6 2017-02-28    0.040880  354
+7 2017-03-31    0.079248  354
+8 2017-04-28   -0.041159  356
+9 2017-05-31    0.107429  353
+Done.
+
+=== Stage 1: Rolling Alpha Generation | 2025-10-24 01:50:00.616810 ===
+ Stage 1: Rolling Alpha Generation completed successfully.
+2025-10-24 01:50:18,472 INFO Starting portfolio optimizer (TOP_N=50, cap=0.1, long-only=True)
+2025-10-24 01:50:28,422 INFO Date 2016-08-31 00:00:00: 50 assets. MVO_sharpe=0.165097 (tc=0.000500), MinVar_sharpe=0.167541 (tc=0.000500)
+2025-10-24 01:50:28,645 INFO Date 2016-09-30 00:00:00: 50 assets. MVO_sharpe=0.159558 (tc=0.000446), MinVar_sharpe=0.162563 (tc=0.000430)
+2025-10-24 01:50:28,858 INFO Date 2016-10-30 00:00:00: 50 assets. MVO_sharpe=0.131201 (tc=0.000465), MinVar_sharpe=0.131102 (tc=0.000460)
+2025-10-24 01:50:29,093 INFO Date 2016-11-30 00:00:00: 50 assets. MVO_sharpe=0.178433 (tc=0.000301), MinVar_sharpe=0.177858 (tc=0.000290)
+2025-10-24 01:50:29,308 INFO Date 2016-12-30 00:00:00: 50 assets. MVO_sharpe=0.167336 (tc=0.000325), MinVar_sharpe=0.163283 (tc=0.000270)
+2025-10-24 01:50:29,530 INFO Date 2017-01-31 00:00:00: 50 assets. MVO_sharpe=0.293202 (tc=0.000370), MinVar_sharpe=0.292855 (tc=0.000330)
+2025-10-24 01:50:29,754 INFO Date 2017-02-28 00:00:00: 50 assets. MVO_sharpe=0.328171 (tc=0.000362), MinVar_sharpe=0.326098 (tc=0.000330)
+2025-10-24 01:50:29,979 INFO Date 2017-03-31 00:00:00: 50 assets. MVO_sharpe=0.262563 (tc=0.000406), MinVar_sharpe=0.266100 (tc=0.000370)
+2025-10-24 01:50:30,204 INFO Date 2017-04-28 00:00:00: 50 assets. MVO_sharpe=0.246574 (tc=0.000388), MinVar_sharpe=0.252523 (tc=0.000370)
+2025-10-24 01:50:30,422 INFO Date 2017-05-31 00:00:00: 50 assets. MVO_sharpe=0.219891 (tc=0.000324), MinVar_sharpe=0.226081 (tc=0.000300)
+2025-10-24 01:50:30,644 INFO Date 2017-06-30 00:00:00: 50 assets. MVO_sharpe=0.211210 (tc=0.000417), MinVar_sharpe=0.216482 (tc=0.000400)
+2025-10-24 01:50:30,862 INFO Date 2017-07-31 00:00:00: 50 assets. MVO_sharpe=0.208711 (tc=0.000429), MinVar_sharpe=0.209818 (tc=0.000410)
+2025-10-24 01:50:31,077 INFO Date 2017-08-31 00:00:00: 50 assets. MVO_sharpe=0.225642 (tc=0.000392), MinVar_sharpe=0.228269 (tc=0.000330)
+2025-10-24 01:50:31,293 INFO Date 2017-09-29 00:00:00: 50 assets. MVO_sharpe=0.280575 (tc=0.000360), MinVar_sharpe=0.275082 (tc=0.000320)
+2025-10-24 01:50:31,520 INFO Date 2017-10-31 00:00:00: 50 assets. MVO_sharpe=0.334534 (tc=0.000374), MinVar_sharpe=0.322530 (tc=0.000320)
+2025-10-24 01:50:31,760 INFO Date 2017-11-30 00:00:00: 50 assets. MVO_sharpe=0.332226 (tc=0.000359), MinVar_sharpe=0.331755 (tc=0.000340)
+2025-10-24 01:50:31,984 INFO Date 2017-12-29 00:00:00: 50 assets. MVO_sharpe=0.356688 (tc=0.000355), MinVar_sharpe=0.359553 (tc=0.000310)
+2025-10-24 01:50:32,215 INFO Date 2018-01-31 00:00:00: 50 assets. MVO_sharpe=0.288224 (tc=0.000327), MinVar_sharpe=0.290448 (tc=0.000270)
+2025-10-24 01:50:32,431 INFO Date 2018-02-28 00:00:00: 50 assets. MVO_sharpe=0.171690 (tc=0.000388), MinVar_sharpe=0.174692 (tc=0.000370)
+2025-10-24 01:50:32,655 INFO Date 2018-03-28 00:00:00: 50 assets. MVO_sharpe=0.144639 (tc=0.000449), MinVar_sharpe=0.147573 (tc=0.000440)
+2025-10-24 01:50:32,876 INFO Date 2018-04-30 00:00:00: 50 assets. MVO_sharpe=0.105457 (tc=0.000455), MinVar_sharpe=0.107526 (tc=0.000440)
+2025-10-24 01:50:33,091 INFO Date 2018-05-31 00:00:00: 50 assets. MVO_sharpe=0.091705 (tc=0.000455), MinVar_sharpe=0.093432 (tc=0.000440)
+2025-10-24 01:50:33,313 INFO Date 2018-06-29 00:00:00: 50 assets. MVO_sharpe=0.072425 (tc=0.000428), MinVar_sharpe=0.072017 (tc=0.000420)
+2025-10-24 01:50:33,534 INFO Date 2018-07-31 00:00:00: 50 assets. MVO_sharpe=0.084941 (tc=0.000424), MinVar_sharpe=0.085496 (tc=0.000410)
+2025-10-24 01:50:33,745 INFO Date 2018-08-31 00:00:00: 50 assets. MVO_sharpe=0.046841 (tc=0.000455), MinVar_sharpe=0.047886 (tc=0.000450)
+2025-10-24 01:50:33,976 INFO Date 2018-09-28 00:00:00: 50 assets. MVO_sharpe=-0.003352 (tc=0.000577), MinVar_sharpe=-0.014708 (tc=0.000340)
+2025-10-24 01:50:34,200 INFO Date 2018-10-31 00:00:00: 50 assets. MVO_sharpe=0.038057 (tc=0.000548), MinVar_sharpe=0.033326 (tc=0.000420)
+2025-10-24 01:50:34,412 INFO Date 2018-11-30 00:00:00: 50 assets. MVO_sharpe=0.023270 (tc=0.000475), MinVar_sharpe=0.006433 (tc=0.000450)
+2025-10-24 01:50:34,636 INFO Date 2018-12-31 00:00:00: 50 assets. MVO_sharpe=3.093250 (tc=0.000526), MinVar_sharpe=0.886894 (tc=0.000390)
+2025-10-24 01:50:34,859 INFO Date 2019-01-31 00:00:00: 50 assets. MVO_sharpe=1.576717 (tc=0.000339), MinVar_sharpe=0.625111 (tc=0.000360)
+2025-10-24 01:50:35,085 INFO Date 2019-02-28 00:00:00: 50 assets. MVO_sharpe=0.330722 (tc=0.000400), MinVar_sharpe=0.287543 (tc=0.000360)
+2025-10-24 01:50:35,305 INFO Date 2019-03-29 00:00:00: 50 assets. MVO_sharpe=0.139148 (tc=0.000482), MinVar_sharpe=0.081290 (tc=0.000420)
+2025-10-24 01:50:35,522 INFO Date 2019-04-30 00:00:00: 50 assets. MVO_sharpe=0.381345 (tc=0.000483), MinVar_sharpe=0.310393 (tc=0.000400)
+2025-10-24 01:50:35,745 INFO Date 2019-05-31 00:00:00: 50 assets. MVO_sharpe=0.428953 (tc=0.000462), MinVar_sharpe=0.368241 (tc=0.000350)
+2025-10-24 01:50:35,968 INFO Date 2019-06-28 00:00:00: 50 assets. MVO_sharpe=0.507128 (tc=0.000337), MinVar_sharpe=0.450147 (tc=0.000280)
+2025-10-24 01:50:36,183 INFO Date 2019-07-31 00:00:00: 50 assets. MVO_sharpe=0.666991 (tc=0.000384), MinVar_sharpe=0.524924 (tc=0.000290)
+2025-10-24 01:50:36,407 INFO Date 2019-08-30 00:00:00: 50 assets. MVO_sharpe=0.424044 (tc=0.000355), MinVar_sharpe=0.379307 (tc=0.000330)
+2025-10-24 01:50:36,634 INFO Date 2019-09-30 00:00:00: 50 assets. MVO_sharpe=0.426182 (tc=0.000348), MinVar_sharpe=0.348427 (tc=0.000290)
+2025-10-24 01:50:36,848 INFO Date 2019-10-31 00:00:00: 50 assets. MVO_sharpe=0.485724 (tc=0.000408), MinVar_sharpe=0.369565 (tc=0.000320)
+2025-10-24 01:50:37,070 INFO Date 2019-11-29 00:00:00: 50 assets. MVO_sharpe=0.325181 (tc=0.000445), MinVar_sharpe=0.274452 (tc=0.000430)
+2025-10-24 01:50:37,302 INFO Date 2019-12-31 00:00:00: 50 assets. MVO_sharpe=0.278978 (tc=0.000454), MinVar_sharpe=0.258492 (tc=0.000370)
+2025-10-24 01:50:37,518 INFO Date 2020-01-31 00:00:00: 50 assets. MVO_sharpe=0.076728 (tc=0.000401), MinVar_sharpe=0.077736 (tc=0.000370)
+2025-10-24 01:50:37,735 INFO Date 2020-02-28 00:00:00: 50 assets. MVO_sharpe=-0.041214 (tc=0.000500), MinVar_sharpe=-0.092192 (tc=0.000500)
+2025-10-24 01:50:37,942 INFO Date 2020-03-31 00:00:00: 50 assets. MVO_sharpe=-0.036912 (tc=0.000450), MinVar_sharpe=-0.097328 (tc=0.000480)
+2025-10-24 01:50:38,168 INFO Date 2020-04-30 00:00:00: 50 assets. MVO_sharpe=-0.026295 (tc=0.000650), MinVar_sharpe=-0.084824 (tc=0.000360)
+2025-10-24 01:50:38,389 INFO Date 2020-05-29 00:00:00: 50 assets. MVO_sharpe=0.000119 (tc=0.000587), MinVar_sharpe=-0.007513 (tc=0.000370)
+2025-10-24 01:50:38,624 INFO Date 2020-06-30 00:00:00: 50 assets. MVO_sharpe=0.046938 (tc=0.000518), MinVar_sharpe=0.048539 (tc=0.000380)
+2025-10-24 01:50:38,852 INFO Date 2020-07-31 00:00:00: 50 assets. MVO_sharpe=0.206790 (tc=0.000422), MinVar_sharpe=0.205587 (tc=0.000410)
+2025-10-24 01:50:39,080 INFO Date 2020-08-31 00:00:00: 50 assets. MVO_sharpe=0.209784 (tc=0.000405), MinVar_sharpe=0.211216 (tc=0.000390)
+2025-10-24 01:50:39,305 INFO Date 2020-09-30 00:00:00: 50 assets. MVO_sharpe=0.228344 (tc=0.000373), MinVar_sharpe=0.226124 (tc=0.000340)
+2025-10-24 01:50:39,529 INFO Date 2020-10-30 00:00:00: 50 assets. MVO_sharpe=0.286798 (tc=0.000396), MinVar_sharpe=0.257475 (tc=0.000380)
+2025-10-24 01:50:39,751 INFO Date 2020-11-27 00:00:00: 50 assets. MVO_sharpe=0.463950 (tc=0.000416), MinVar_sharpe=0.448184 (tc=0.000400)
+2025-10-24 01:50:39,960 INFO Date 2020-12-31 00:00:00: 50 assets. MVO_sharpe=0.490699 (tc=0.000473), MinVar_sharpe=0.477629 (tc=0.000440)
+2025-10-24 01:50:40,182 INFO Date 2021-01-29 00:00:00: 50 assets. MVO_sharpe=0.425481 (tc=0.000402), MinVar_sharpe=0.413429 (tc=0.000370)
+2025-10-24 01:50:40,400 INFO Date 2021-02-26 00:00:00: 50 assets. MVO_sharpe=0.578633 (tc=0.000407), MinVar_sharpe=0.574852 (tc=0.000400)
+2025-10-24 01:50:40,633 INFO Date 2021-03-31 00:00:00: 50 assets. MVO_sharpe=0.535130 (tc=0.000378), MinVar_sharpe=0.548350 (tc=0.000340)
+2025-10-24 01:50:40,851 INFO Date 2021-04-30 00:00:00: 50 assets. MVO_sharpe=0.606896 (tc=0.000372), MinVar_sharpe=0.617618 (tc=0.000350)
+2025-10-24 01:50:41,074 INFO Date 2021-05-31 00:00:00: 50 assets. MVO_sharpe=0.548765 (tc=0.000439), MinVar_sharpe=0.556537 (tc=0.000420)
+2025-10-24 01:50:41,288 INFO Date 2021-06-30 00:00:00: 50 assets. MVO_sharpe=0.485927 (tc=0.000399), MinVar_sharpe=0.496538 (tc=0.000380)
+2025-10-24 01:50:41,513 INFO Date 2021-07-30 00:00:00: 50 assets. MVO_sharpe=0.467938 (tc=0.000399), MinVar_sharpe=0.476631 (tc=0.000370)
+2025-10-24 01:50:41,727 INFO Date 2021-08-31 00:00:00: 50 assets. MVO_sharpe=0.481807 (tc=0.000325), MinVar_sharpe=0.490114 (tc=0.000290)
+2025-10-24 01:50:41,945 INFO Date 2021-09-30 00:00:00: 50 assets. MVO_sharpe=0.525480 (tc=0.000401), MinVar_sharpe=0.528335 (tc=0.000390)
+2025-10-24 01:50:42,171 INFO Date 2021-10-29 00:00:00: 50 assets. MVO_sharpe=0.539129 (tc=0.000370), MinVar_sharpe=0.545730 (tc=0.000340)
+2025-10-24 01:50:42,387 INFO Date 2021-11-30 00:00:00: 50 assets. MVO_sharpe=0.706451 (tc=0.000353), MinVar_sharpe=0.473232 (tc=0.000320)
+2025-10-24 01:50:42,609 INFO Date 2021-12-31 00:00:00: 50 assets. MVO_sharpe=0.315724 (tc=0.000363), MinVar_sharpe=0.323580 (tc=0.000300)
+2025-10-24 01:50:42,835 INFO Date 2022-01-31 00:00:00: 50 assets. MVO_sharpe=0.268926 (tc=0.000418), MinVar_sharpe=0.274799 (tc=0.000380)
+2025-10-24 01:50:43,056 INFO Date 2022-02-28 00:00:00: 50 assets. MVO_sharpe=0.216212 (tc=0.000391), MinVar_sharpe=0.195668 (tc=0.000360)
+2025-10-24 01:50:43,299 INFO Date 2022-03-31 00:00:00: 50 assets. MVO_sharpe=0.221342 (tc=0.000391), MinVar_sharpe=0.227980 (tc=0.000370)
+2025-10-24 01:50:43,518 INFO Date 2022-04-29 00:00:00: 50 assets. MVO_sharpe=0.147868 (tc=0.000412), MinVar_sharpe=0.152429 (tc=0.000380)
+2025-10-24 01:50:43,741 INFO Date 2022-05-31 00:00:00: 50 assets. MVO_sharpe=0.066295 (tc=0.000444), MinVar_sharpe=0.067272 (tc=0.000430)
+2025-10-24 01:50:43,955 INFO Date 2022-06-30 00:00:00: 50 assets. MVO_sharpe=0.049208 (tc=0.000450), MinVar_sharpe=0.050783 (tc=0.000430)
+2025-10-24 01:50:44,183 INFO Date 2022-07-29 00:00:00: 50 assets. MVO_sharpe=0.087713 (tc=0.000103), MinVar_sharpe=0.090872 (tc=0.000000)
+2025-10-24 01:50:44,399 INFO Date 2022-08-30 00:00:00: 50 assets. MVO_sharpe=0.098504 (tc=0.000146), MinVar_sharpe=0.102164 (tc=0.000000)
+2025-10-24 01:50:44,626 INFO Date 2022-09-30 00:00:00: 50 assets. MVO_sharpe=0.053195 (tc=0.000131), MinVar_sharpe=0.055457 (tc=0.000010)
+2025-10-24 01:50:44,847 INFO Date 2022-10-31 00:00:00: 50 assets. MVO_sharpe=0.064115 (tc=0.000125), MinVar_sharpe=0.066727 (tc=0.000000)
+2025-10-24 01:50:45,068 INFO Date 2022-11-30 00:00:00: 50 assets. MVO_sharpe=0.087890 (tc=0.000115), MinVar_sharpe=0.091084 (tc=0.000000)
+2025-10-24 01:50:45,292 INFO Date 2022-12-30 00:00:00: 50 assets. MVO_sharpe=0.058485 (tc=0.000124), MinVar_sharpe=0.060968 (tc=0.000000)
+2025-10-24 01:50:45,505 INFO Date 2023-01-31 00:00:00: 50 assets. MVO_sharpe=0.050227 (tc=0.000119), MinVar_sharpe=0.052437 (tc=0.000000)
+2025-10-24 01:50:45,730 INFO Date 2023-02-28 00:00:00: 50 assets. MVO_sharpe=0.073459 (tc=0.000116), MinVar_sharpe=0.076247 (tc=0.000000)
+2025-10-24 01:50:45,944 INFO Date 2023-03-31 00:00:00: 50 assets. MVO_sharpe=0.053464 (tc=0.000136), MinVar_sharpe=0.055823 (tc=0.000000)
+2025-10-24 01:50:46,169 INFO Date 2023-04-28 00:00:00: 50 assets. MVO_sharpe=0.104986 (tc=0.000119), MinVar_sharpe=0.108641 (tc=0.000000)
+2025-10-24 01:50:46,392 INFO Date 2023-05-31 00:00:00: 50 assets. MVO_sharpe=0.172629 (tc=0.000129), MinVar_sharpe=0.178204 (tc=0.000000)
+2025-10-24 01:50:46,605 INFO Date 2023-06-30 00:00:00: 50 assets. MVO_sharpe=0.216387 (tc=0.000137), MinVar_sharpe=0.223159 (tc=0.000000)
+2025-10-24 01:50:46,833 INFO Date 2023-07-31 00:00:00: 50 assets. MVO_sharpe=0.199619 (tc=0.000109), MinVar_sharpe=0.205733 (tc=0.000000)
+2025-10-24 01:50:47,057 INFO Date 2023-08-31 00:00:00: 50 assets. MVO_sharpe=0.203346 (tc=0.000117), MinVar_sharpe=0.209779 (tc=0.000000)
+2025-10-24 01:50:47,275 INFO Date 2023-09-29 00:00:00: 50 assets. MVO_sharpe=0.209423 (tc=0.000121), MinVar_sharpe=0.215911 (tc=0.000000)
+2025-10-24 01:50:47,490 INFO Date 2023-10-31 00:00:00: 50 assets. MVO_sharpe=0.215302 (tc=0.000139), MinVar_sharpe=0.221997 (tc=0.000000)
+2025-10-24 01:50:47,714 INFO Date 2023-11-30 00:00:00: 50 assets. MVO_sharpe=0.247803 (tc=0.000129), MinVar_sharpe=0.255374 (tc=0.000000)
+2025-10-24 01:50:47,936 INFO Date 2023-12-29 00:00:00: 50 assets. MVO_sharpe=0.291668 (tc=0.000138), MinVar_sharpe=0.300355 (tc=0.000000)
+2025-10-24 01:50:48,147 INFO Date 2024-01-31 00:00:00: 50 assets. MVO_sharpe=0.335462 (tc=0.000455), MinVar_sharpe=0.345405 (tc=0.000440)
+2025-10-24 01:50:48,376 INFO Date 2024-02-29 00:00:00: 50 assets. MVO_sharpe=0.328028 (tc=0.000432), MinVar_sharpe=0.338110 (tc=0.000420)
+2025-10-24 01:50:48,604 INFO Date 2024-03-28 00:00:00: 50 assets. MVO_sharpe=0.362222 (tc=0.000444), MinVar_sharpe=0.373224 (tc=0.000430)
+2025-10-24 01:50:48,819 INFO Date 2024-04-30 00:00:00: 50 assets. MVO_sharpe=0.340906 (tc=0.000454), MinVar_sharpe=0.351369 (tc=0.000440)
+2025-10-24 01:50:49,054 INFO Date 2024-05-31 00:00:00: 50 assets. MVO_sharpe=0.341840 (tc=0.000445), MinVar_sharpe=0.352371 (tc=0.000430)
+2025-10-24 01:50:49,277 INFO Date 2024-06-28 00:00:00: 50 assets. MVO_sharpe=0.342804 (tc=0.000454), MinVar_sharpe=0.353194 (tc=0.000450)
+2025-10-24 01:50:49,483 INFO Date 2024-07-31 00:00:00: 50 assets. MVO_sharpe=0.423238 (tc=0.000479), MinVar_sharpe=0.422882 (tc=0.000470)
+2025-10-24 01:50:49,707 INFO Date 2024-08-30 00:00:00: 50 assets. MVO_sharpe=0.365291 (tc=0.000380), MinVar_sharpe=0.370301 (tc=0.000350)
+2025-10-24 01:50:49,926 INFO Date 2024-09-30 00:00:00: 50 assets. MVO_sharpe=0.325354 (tc=0.000422), MinVar_sharpe=0.328870 (tc=0.000410)
+2025-10-24 01:50:50,153 INFO Date 2024-10-31 00:00:00: 50 assets. MVO_sharpe=0.313490 (tc=0.000413), MinVar_sharpe=0.315755 (tc=0.000400)
+2025-10-24 01:50:50,368 INFO Date 2024-11-29 00:00:00: 50 assets. MVO_sharpe=0.306097 (tc=0.000386), MinVar_sharpe=0.303524 (tc=0.000350)
+2025-10-24 01:50:50,589 INFO Date 2024-12-31 00:00:00: 50 assets. MVO_sharpe=0.216208 (tc=0.000404), MinVar_sharpe=0.210769 (tc=0.000380)
+2025-10-24 01:50:50,814 INFO Date 2025-01-31 00:00:00: 50 assets. MVO_sharpe=0.141585 (tc=0.000399), MinVar_sharpe=0.139101 (tc=0.000390)
+2025-10-24 01:50:51,034 INFO Date 2025-02-28 00:00:00: 50 assets. MVO_sharpe=0.118066 (tc=0.000421), MinVar_sharpe=0.109792 (tc=0.000400)
+2025-10-24 01:50:51,261 INFO Date 2025-03-28 00:00:00: 50 assets. MVO_sharpe=0.157776 (tc=0.000402), MinVar_sharpe=0.156454 (tc=0.000380)
+2025-10-24 01:50:51,474 INFO Date 2025-04-30 00:00:00: 50 assets. MVO_sharpe=0.164509 (tc=0.000371), MinVar_sharpe=0.162728 (tc=0.000340)
+2025-10-24 01:50:51,689 INFO Date 2025-05-30 00:00:00: 50 assets. MVO_sharpe=0.213325 (tc=0.000444), MinVar_sharpe=0.198961 (tc=0.000400)
+2025-10-24 01:50:51,728 INFO Saved optimized weights to D:\Portfolio Optimzation project\results\portfolios\optimized_weights.csv
+2025-10-24 01:50:51,731 INFO Saved optimization summary to D:\Portfolio Optimzation project\results\portfolios\opt_summary.csv
+2025-10-24 01:50:52,246 INFO Saved plot: D:\Portfolio Optimzation project\results\portfolios\plots\opt_summary_timeseries.png
+2025-10-24 01:50:52,798 INFO Saved plot: D:\Portfolio Optimzation project\results\portfolios\plots\opt_weights_last_date.png
+2025-10-24 01:50:52,808 INFO Done. Produced 5300 optimized-weight rows for 106 dates
+
+=== Stage 2: Portfolio Optimization | 2025-10-24 01:50:16.444512 ===
+ Stage 2: Portfolio Optimization completed successfully.
+D:\Portfolio Optimzation project\scripts\generate_dynamic_weights.py:79: RuntimeWarning: invalid value encountered in divide
+  w_mvo_best_sharpe /= np.sum(w_mvo_best_sharpe)
+D:\Portfolio Optimzation project\scripts\generate_dynamic_weights.py:79: RuntimeWarning: invalid value encountered in divide
+  w_mvo_best_sharpe /= np.sum(w_mvo_best_sharpe)
+D:\Portfolio Optimzation project\scripts\generate_dynamic_weights.py:79: RuntimeWarning: invalid value encountered in divide
+  w_mvo_best_sharpe /= np.sum(w_mvo_best_sharpe)
+D:\Portfolio Optimzation project\scripts\generate_dynamic_weights.py:79: RuntimeWarning: invalid value encountered in divide
+  w_mvo_best_sharpe /= np.sum(w_mvo_best_sharpe)
+D:\Portfolio Optimzation project\scripts\generate_dynamic_weights.py:79: RuntimeWarning: invalid value encountered in divide
+  w_mvo_best_sharpe /= np.sum(w_mvo_best_sharpe)
+D:\Portfolio Optimzation project\scripts\generate_dynamic_weights.py:79: RuntimeWarning: invalid value encountered in divide
+  w_mvo_best_sharpe /= np.sum(w_mvo_best_sharpe)
+D:\Portfolio Optimzation project\scripts\generate_dynamic_weights.py:79: RuntimeWarning: invalid value encountered in divide
+  w_mvo_best_sharpe /= np.sum(w_mvo_best_sharpe)
+D:\Portfolio Optimzation project\scripts\generate_dynamic_weights.py:79: RuntimeWarning: invalid value encountered in divide
+  w_mvo_best_sharpe /= np.sum(w_mvo_best_sharpe)
+ Total rebalance periods: 106
+ Saved optimized_weights_2016-09-01.csv | 342 tickers
+ Saved optimized_weights_2016-10-01.csv | 343 tickers
+ Saved optimized_weights_2016-11-01.csv | 342 tickers
+ Saved optimized_weights_2016-12-01.csv | 344 tickers
+ Saved optimized_weights_2017-01-01.csv | 345 tickers
+ Saved optimized_weights_2017-02-01.csv | 347 tickers
+ Saved optimized_weights_2017-03-01.csv | 347 tickers
+ Saved optimized_weights_2017-04-01.csv | 348 tickers
+ Saved optimized_weights_2017-05-01.csv | 351 tickers
+ Saved optimized_weights_2017-06-01.csv | 350 tickers
+ Saved optimized_weights_2017-07-01.csv | 351 tickers
+ Saved optimized_weights_2017-08-01.csv | 351 tickers
+ Saved optimized_weights_2017-09-01.csv | 352 tickers
+ Saved optimized_weights_2017-10-01.csv | 353 tickers
+ Saved optimized_weights_2017-11-01.csv | 354 tickers
+ Saved optimized_weights_2017-12-01.csv | 355 tickers
+ Saved optimized_weights_2018-01-01.csv | 357 tickers
+ Saved optimized_weights_2018-02-01.csv | 359 tickers
+ Saved optimized_weights_2018-03-01.csv | 360 tickers
+ Saved optimized_weights_2018-04-01.csv | 364 tickers
+ Saved optimized_weights_2018-05-01.csv | 369 tickers
+ Saved optimized_weights_2018-06-01.csv | 371 tickers
+ Saved optimized_weights_2018-07-01.csv | 371 tickers
+ Saved optimized_weights_2018-08-01.csv | 372 tickers
+ Saved optimized_weights_2018-09-01.csv | 375 tickers
+ Saved optimized_weights_2018-10-01.csv | 376 tickers
+ Saved optimized_weights_2018-11-01.csv | 379 tickers
+ Saved optimized_weights_2018-12-01.csv | 379 tickers
+ Saved optimized_weights_2019-01-01.csv | 379 tickers
+ Saved optimized_weights_2019-02-01.csv | 380 tickers
+ Saved optimized_weights_2019-03-01.csv | 382 tickers
+ Saved optimized_weights_2019-04-01.csv | 382 tickers
+ Saved optimized_weights_2019-05-01.csv | 385 tickers
+ Saved optimized_weights_2019-06-01.csv | 386 tickers
+ Saved optimized_weights_2019-07-01.csv | 387 tickers
+ Saved optimized_weights_2019-08-01.csv | 389 tickers
+ Saved optimized_weights_2019-09-01.csv | 390 tickers
+ Saved optimized_weights_2019-10-01.csv | 391 tickers
+ Saved optimized_weights_2019-11-01.csv | 397 tickers
+ Saved optimized_weights_2019-12-01.csv | 397 tickers
+ Saved optimized_weights_2020-01-01.csv | 397 tickers
+ Saved optimized_weights_2020-02-01.csv | 397 tickers
+ Saved optimized_weights_2020-03-01.csv | 398 tickers
+ Saved optimized_weights_2020-04-01.csv | 399 tickers
+ Saved optimized_weights_2020-05-01.csv | 400 tickers
+ Saved optimized_weights_2020-06-01.csv | 400 tickers
+ Saved optimized_weights_2020-07-01.csv | 400 tickers
+ Saved optimized_weights_2020-08-01.csv | 402 tickers
+ Saved optimized_weights_2020-09-01.csv | 403 tickers
+ Saved optimized_weights_2020-10-01.csv | 407 tickers
+ Saved optimized_weights_2020-11-01.csv | 408 tickers
+ Saved optimized_weights_2020-12-01.csv | 408 tickers
+ Saved optimized_weights_2021-01-01.csv | 408 tickers
+ Saved optimized_weights_2021-02-01.csv | 409 tickers
+ Saved optimized_weights_2021-03-01.csv | 410 tickers
+ Saved optimized_weights_2021-04-01.csv | 412 tickers
+ Saved optimized_weights_2021-05-01.csv | 414 tickers
+ Saved optimized_weights_2021-06-01.csv | 415 tickers
+ Saved optimized_weights_2021-07-01.csv | 415 tickers
+ Saved optimized_weights_2021-08-01.csv | 414 tickers
+ Saved optimized_weights_2021-09-01.csv | 415 tickers
+ Saved optimized_weights_2021-10-01.csv | 417 tickers
+ Saved optimized_weights_2021-11-01.csv | 420 tickers
+ Saved optimized_weights_2021-12-01.csv | 421 tickers
+ Saved optimized_weights_2022-01-01.csv | 425 tickers
+ Saved optimized_weights_2022-02-01.csv | 428 tickers
+ Saved optimized_weights_2022-03-01.csv | 430 tickers
+ Saved optimized_weights_2022-04-01.csv | 432 tickers
+ Saved optimized_weights_2022-05-01.csv | 433 tickers
+ Saved optimized_weights_2022-06-01.csv | 436 tickers
+ Saved optimized_weights_2022-07-01.csv | 439 tickers
+ Saved optimized_weights_2022-08-01.csv | 441 tickers
+ Saved optimized_weights_2022-09-01.csv | 442 tickers
+ Saved optimized_weights_2022-10-01.csv | 445 tickers
+ Saved optimized_weights_2022-11-01.csv | 445 tickers
+ Saved optimized_weights_2022-12-01.csv | 447 tickers
+ Saved optimized_weights_2023-01-01.csv | 447 tickers
+ Saved optimized_weights_2023-02-01.csv | 447 tickers
+ Saved optimized_weights_2023-03-01.csv | 448 tickers
+ Saved optimized_weights_2023-04-01.csv | 449 tickers
+ Saved optimized_weights_2023-05-01.csv | 450 tickers
+ Saved optimized_weights_2023-06-01.csv | 453 tickers
+ Saved optimized_weights_2023-07-01.csv | 455 tickers
+ Saved optimized_weights_2023-08-01.csv | 455 tickers
+ Saved optimized_weights_2023-09-01.csv | 456 tickers
+ Saved optimized_weights_2023-10-01.csv | 456 tickers
+ Saved optimized_weights_2023-11-01.csv | 456 tickers
+ Saved optimized_weights_2023-12-01.csv | 457 tickers
+ Saved optimized_weights_2024-01-01.csv | 457 tickers
+ Saved optimized_weights_2024-02-01.csv | 458 tickers
+ Saved optimized_weights_2024-03-01.csv | 462 tickers
+ Saved optimized_weights_2024-04-01.csv | 463 tickers
+ Saved optimized_weights_2024-05-01.csv | 466 tickers
+ Saved optimized_weights_2024-06-01.csv | 467 tickers
+ Saved optimized_weights_2024-07-01.csv | 471 tickers
+ Saved optimized_weights_2024-08-01.csv | 472 tickers
+ Saved optimized_weights_2024-09-01.csv | 472 tickers
+ Saved optimized_weights_2024-10-01.csv | 472 tickers
+ Saved optimized_weights_2024-11-01.csv | 474 tickers
+ Saved optimized_weights_2024-12-01.csv | 478 tickers
+ Saved optimized_weights_2025-01-01.csv | 478 tickers
+ Saved optimized_weights_2025-02-01.csv | 479 tickers
+ Saved optimized_weights_2025-03-01.csv | 482 tickers
+ Saved optimized_weights_2025-04-01.csv | 485 tickers
+ Saved optimized_weights_2025-05-01.csv | 486 tickers
+ Dynamic weights generated successfully!
+
+=== Stage 3: Dynamic Weight Generation | 2025-10-24 01:50:53.041548 ===
+ Stage 3: Dynamic Weight Generation completed successfully.
+D:\Portfolio Optimzation project\scripts\backtester.py:53: FutureWarning: The default fill_method='pad' in DataFrame.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  returns = prices.pivot(index="date", columns="ticker", values="close_price").pct_change().dropna()
+
+Portfolio Performance Summary:
+Annual Return: -15.17%
+Volatility: 25.29%
+Sharpe: -0.60
+Max Drawdown: -26.55%
+
+=== Stage 4: Backtesting | 2025-10-24 01:51:06.921194 ===
+ Stage 4: Backtesting completed successfully.
